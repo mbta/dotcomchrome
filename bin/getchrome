@@ -7,28 +7,36 @@ Mix.install([{:httpoison, "~> 1.8"}, {:floki, "~> 0.31"}])
 200 = response.status_code
 {:ok, tree} = Floki.parse_document(response.body)
 
-# TODO: Instead of using the <link> and <script> tags from MBTA.com,
-# extract the relevant CSS and JS
+# TODO:
+# Extract the relevant JS and CSS instead of copying the <script> and <link> tags
 scripts_tags = Floki.find(tree, "[data-turbolinks-track=\"reload\"]")
+
+# Make relative links absolute.
+# Standard links open within the same window and include rel="noreferrer"
+handle_internal_link = fn link ->
+  IO.puts(" * updating relative link")
+
+  [link]
+  |> Floki.attr("a", "href", fn href -> "https://www.mbta.com" <> href end)
+  |> Floki.attr("a", "rel", fn _ -> "noopener" end)
+end
+
+# External links should have target='_blank' and rel='noopener noreferrer'
+handle_external_link = fn link ->
+  IO.puts(" * modifying external link")
+
+  [link]
+  |> Floki.attr("a", "rel", fn _ -> "noopener noreferrer" end)
+  |> Floki.attr("a", "target", fn _ -> "_blank" end)
+end
 
 process_link = fn link ->
   case Floki.attribute(link, "href") do
-    ["/" <> _page] ->
-      IO.puts(" * updating relative link")
-      Floki.attr([link], "a", "href", fn href -> "https://www.mbta.com" <> href end)
-
-    ["https://" <> _url] ->
-      IO.puts(" * modifying https:// link")
-      Floki.attr([link], "a", "rel", fn _ -> "noopener" end)
-
-    ["http://" <> _url] ->
-      IO.puts(" * modifying http:// link")
-      Floki.attr([link], "a", "rel", fn _ -> "noopener" end)
-
-    _ ->
-      [link]
+    ["/" <> _page] -> handle_internal_link.(link)
+    ["https://" <> _url] -> handle_external_link.(link)
+    ["http://" <> _url] -> handle_external_link.(link)
+    _ -> [link]
   end
-  |> Floki.attr("a", "target", fn _ -> "_blank" end)
   |> List.first()
 end
 
