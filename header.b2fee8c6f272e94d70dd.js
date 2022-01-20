@@ -114,12 +114,10 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var bootstrap_dist_js_umd_tooltip__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(bootstrap_dist_js_umd_tooltip__WEBPACK_IMPORTED_MODULE_2__);
 /* harmony import */ var _js_collapse__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./js/collapse */ "./js/collapse.js");
 /* harmony import */ var _js_header_dropdowns__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./js/header-dropdowns */ "./js/header-dropdowns.js");
-/* Just header and footer stuff */
 
 
 
 
- // import "./css/export-headerfooter.scss";
 
 Object(_js_collapse__WEBPACK_IMPORTED_MODULE_3__["default"])();
 Object(_js_header_dropdowns__WEBPACK_IMPORTED_MODULE_4__["initCarets"])();
@@ -12149,4 +12147,4 @@ module.exports = __webpack_require__(/*! ./css/export-headerfooter.scss */"./css
 /***/ })
 
 /******/ });
-//# sourceMappingURL=header.e7ad55c035caedd4095d.js.map
+//# sourceMappingURL=header.b2fee8c6f272e94d70dd.js.map
