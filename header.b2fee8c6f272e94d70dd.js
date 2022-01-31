@@ -114,16 +114,8 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var bootstrap_dist_js_umd_tooltip__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(bootstrap_dist_js_umd_tooltip__WEBPACK_IMPORTED_MODULE_2__);
 /* harmony import */ var _js_collapse__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./js/collapse */ "./js/collapse.js");
 /* harmony import */ var _js_header_dropdowns__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./js/header-dropdowns */ "./js/header-dropdowns.js");
-/* harmony import */ var _css_export_headerfooter_scss__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./css/export-headerfooter.scss */ "./css/export-headerfooter.scss");
-/* harmony import */ var _css_export_headerfooter_scss__WEBPACK_IMPORTED_MODULE_5___default = /*#__PURE__*/__webpack_require__.n(_css_export_headerfooter_scss__WEBPACK_IMPORTED_MODULE_5__);
-/* Just header and footer stuff */
-// import "@babel/polyfill";
-// import "whatwg-fetch";
-// import "focus-options-polyfill";
 
 
-
-;
 
 
 
@@ -12142,16 +12134,17 @@ module.exports = function (module) {
 /***/ }),
 
 /***/ 0:
-/*!**************************************!*\
-  !*** multi ./export-headerfooter.js ***!
-  \**************************************/
+/*!*********************************************************************!*\
+  !*** multi ./export-headerfooter.js ./css/export-headerfooter.scss ***!
+  \*********************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = __webpack_require__(/*! ./export-headerfooter.js */"./export-headerfooter.js");
+__webpack_require__(/*! ./export-headerfooter.js */"./export-headerfooter.js");
+module.exports = __webpack_require__(/*! ./css/export-headerfooter.scss */"./css/export-headerfooter.scss");
 
 
 /***/ })
 
 /******/ });
-//# sourceMappingURL=script.js.map
+//# sourceMappingURL=header.b2fee8c6f272e94d70dd.js.map

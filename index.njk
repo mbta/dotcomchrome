@@ -1,0 +1,21 @@
+<!-- 
+  Simple page to demonstrate the compiled header and footer.
+  Can generate an HTML page using anything that cam compile Nunjucks templates 
+  into HTML. For example, using Eleventy v1.0:
+  
+  ```
+  eleventy --input=index.njk --output=. 
+  ```
+ -->
+<html lang="en">
+  <head>
+  {% include "head.html" %}
+  <body>
+    <div class="body-wrapper" id="body-wrapper">
+      {% include "header.html" %}
+      <hr>
+      {% include "footer.html" %}
+    </div>
+  {% include "scripts.html" %}
+  </body>
+</html>
