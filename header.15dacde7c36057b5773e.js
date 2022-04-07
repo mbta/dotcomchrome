@@ -122,7 +122,12 @@ __webpack_require__.r(__webpack_exports__);
 
 Object(_js_collapse__WEBPACK_IMPORTED_MODULE_3__["default"])();
 Object(_ts_app_global_navigation_ts__WEBPACK_IMPORTED_MODULE_4__["setup"])();
-document.body.classList.add("js");
+document.body.classList.add("js"); // Remove event listeners from header search button, then hide
+
+var searchButton = document.querySelector(".header-search__toggle");
+var blankButton = searchButton.cloneNode(true);
+blankButton.style.opacity = "0";
+searchButton.replaceWith(blankButton);
 
 /***/ }),
 
@@ -15759,4 +15764,4 @@ module.exports = __webpack_require__(/*! ./css/export-headerfooter.scss */"./css
 /***/ })
 
 /******/ });
-//# sourceMappingURL=header.964fc12f6b3e207d4cb5.js.map
+//# sourceMappingURL=header.15dacde7c36057b5773e.js.map

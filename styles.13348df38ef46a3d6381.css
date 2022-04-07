@@ -1,5 +1,5 @@
 @charset "UTF-8";
-.hidden-no-js {
+:not(.js) .hidden-no-js {
   display: none;
 }
 
@@ -13771,4 +13771,4 @@ nav.m-menu--desktop .m-menu__language {
   }
 }
 
-/*# sourceMappingURL=styles.0c97f5c7b95a04f6a4d6.css.map*/
+/*# sourceMappingURL=styles.13348df38ef46a3d6381.css.map*/
