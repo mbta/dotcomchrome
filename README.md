@@ -40,7 +40,7 @@ The [`index.njk`](index.njk) file holds a template containing a skeleton HTML pa
 One way this can be done is by using [Eleventy](https://www.11ty.dev/docs/):
 
 ```
-eleventy --serve --input=index.njk --output=.
+npx @11ty/eleventy --serve --input=index.njk --output=.
 [11ty] Writing ./index.html from ./index.njk
 [11ty] Wrote 1 file in 0.14 seconds (v1.0.0)
 [11ty] Watching…
