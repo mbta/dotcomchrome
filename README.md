@@ -30,6 +30,7 @@ scripts.html**
 styles.105dc30b074592c46ad9.css**
 styles.105dc30b074592c46ad9.css.map**
 styles.1d0bb3f99e53cb784f6b.min.css**
+styles.1d0bb3f99e53cb784f6b.min.css.map**
 ```
 
 [`head.html`](head.html) and [`scripts.html`](scripts.html) will always link to the latest minified JS and CSS.
