@@ -11,7 +11,7 @@ fonts/
 |  (all font files)**
 |
 images/
-|  map-abstract-bkg-overlay.png**
+|  (images)**
 |
 languages/
 |  (contains translated content - WIP)
@@ -21,7 +21,6 @@ footer.html**
 head.html**
 header.b2fee8c6f272e94d70dd.js**
 header.b2fee8c6f272e94d70dd.js.map**
-header.c7c0a900e66023d922a2.min.js**
 header.html**
 index.html
 index.njk
@@ -52,4 +51,7 @@ npx @11ty/eleventy --serve --input=index.njk --output=.
  ----------------------------------
 [Browsersync] Serving files from: .
 ```
+
+The preview can be seen at `localhost:8080`. **NEW**: JavaScript features are not enabled in the preview by default - to use this, open the browser console and enter `window.setupDotcomChrome(document.documentElement)`, which will run the initialization code and enable navigation bar interactivity.
+
 For convenience, the compiled HTML is provided at [`index.html`](index.html)
