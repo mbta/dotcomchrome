@@ -7,20 +7,25 @@
   eleventy --input=index.njk --output=. 
   ```
  -->
-{% include 'head.html' %}
 {% set headerHTML -%}{% include 'header.html' %}{%- endset %}
 {% set footerHTML -%}{% include 'footer.html' %}{%- endset %}
-{% set headTag -%}{% include 'head.html' %}{%- endset %}
 <html lang="en">
+  <head>
+    <link href='{{ manifest["dotcomchrome.css"]["src"] }}' rel="stylesheet" integrity='{{ manifest["dotcomchrome.css"]["integrity"] }}' crossorigin="anonymous">
+  </head>
   <body>
     <div class="body-wrapper" id="body-wrapper"></div>
-    {% include "scripts.html" %}
+    
+    <script src='{{ manifest["dotcomchrome.js"]["src"] }}' integrity='{{ manifest["dotcomchrome.js"]["integrity"] }}' crossorigin="anonymous"></script>
+
     <script type="text/javascript">
       const host = document.getElementById('body-wrapper');
       host.attachShadow({mode: 'open'});
-      host.shadowRoot.innerHTML = `<div>{{ headTag | safe }}{{ headerHTML | safe }}<hr>{{ footerHTML | safe }}</div>`;    
+      host.shadowRoot.innerHTML = `<div><head>
+    <link href='{{ manifest["dotcomchrome.css"]["src"] }}' rel="stylesheet" integrity='{{ manifest["dotcomchrome.css"]["integrity"] }}' crossorigin="anonymous">
+  </head>{{ headerHTML | safe }}<hr>{{ footerHTML | safe }}</div>`;    
       window.setupDotcomChrome(host.shadowRoot.firstChild);
-      console.log("setup done");
+      console.log("preview setup done");
     </script>
   </body>
 </html>

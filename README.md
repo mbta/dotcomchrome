@@ -35,23 +35,4 @@ styles.1d0bb3f99e53cb784f6b.min.css.map**
 [`head.html`](head.html) and [`scripts.html`](scripts.html) will always link to the latest minified JS and CSS.
 ## How to preview
 
-The [`index.njk`](index.njk) file holds a template containing a skeleton HTML page for displaying the header and footer - you'll need to compile and view it using a webserver for it to display properly.
-
-One way this can be done is by using [Eleventy](https://www.11ty.dev/docs/):
-
-```
-npx @11ty/eleventy --serve --input=index.njk --output=.
-[11ty] Writing ./index.html from ./index.njk
-[11ty] Wrote 1 file in 0.14 seconds (v1.0.0)
-[11ty] Watching…
-[Browsersync] Access URLs:
- ----------------------------------
-    Local: http://localhost:8080
- External: http://192.168.1.76:8080
- ----------------------------------
-[Browsersync] Serving files from: .
-```
-
-The preview can be seen at `localhost:8080`. **NEW**: JavaScript features are not enabled in the preview by default - to use this, open the browser console and enter `window.setupDotcomChrome(document.documentElement)`, which will run the initialization code and enable navigation bar interactivity.
-
-For convenience, the compiled HTML is provided at [`index.html`](index.html)
+The [`index.njk`](index.njk) file in the `preview` folder holds a template containing a skeleton HTML page for displaying the header and footer - you'll need to compile and view it using a webserver for it to display properly. This can be done using the provided `Makefile`, e.g. `cd preview; make`.
