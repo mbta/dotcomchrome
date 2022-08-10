@@ -7,15 +7,20 @@
   eleventy --input=index.njk --output=. 
   ```
  -->
+{% include 'head.html' %}
+{% set headerHTML -%}{% include 'header.html' %}{%- endset %}
+{% set footerHTML -%}{% include 'footer.html' %}{%- endset %}
+{% set headTag -%}{% include 'head.html' %}{%- endset %}
 <html lang="en">
-  <head>
-  {% include "head.html" %}
   <body>
-    <div class="body-wrapper" id="body-wrapper">
-      {% include "header.html" %}
-      <hr>
-      {% include "footer.html" %}
-    </div>
-  {% include "scripts.html" %}
+    <div class="body-wrapper" id="body-wrapper"></div>
+    {% include "scripts.html" %}
+    <script type="text/javascript">
+      const host = document.getElementById('body-wrapper');
+      host.attachShadow({mode: 'open'});
+      host.shadowRoot.innerHTML = `<div>{{ headTag | safe }}{{ headerHTML | safe }}<hr>{{ footerHTML | safe }}</div>`;    
+      window.setupDotcomChrome(host.shadowRoot.firstChild);
+      console.log("setup done");
+    </script>
   </body>
 </html>
