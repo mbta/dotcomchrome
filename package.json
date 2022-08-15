@@ -4,7 +4,7 @@
   "description": "Header and footer templates and assets from mbta.com",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/mbta/dotcomchrome.git"
+    "url": "https://github.com/mbta/dotcomchrome.git"
   },
   "homepage": "https://github.com/mbta/dotcomchrome#readme"
 }
