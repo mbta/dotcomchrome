@@ -1,0 +1,4 @@
+preview/*
+!preview/Makefile
+!preview/index.njk
+!preview/.eleventy.js
