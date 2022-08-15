@@ -1,7 +1,7 @@
 {
   "name": "dotcomchrome",
   "version": "2.0.0",
-  "description": "Header and footer templates from mbta.com",
+  "description": "Header and footer templates and assets from mbta.com",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/mbta/dotcomchrome.git"
