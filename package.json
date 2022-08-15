@@ -6,5 +6,6 @@
     "type": "git",
     "url": "https://github.com/mbta/dotcomchrome.git"
   },
-  "homepage": "https://github.com/mbta/dotcomchrome#readme"
+  "homepage": "https://github.com/mbta/dotcomchrome#readme",
+  "private": true
 }
