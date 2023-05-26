@@ -95,6 +95,14 @@
     "src": "header.2b053925731cfd510542.js.map",
     "integrity": "sha256-BnzWdAlR/C+GikjElfscR6IT8Yi8X6XreHVsWS2i+FY= sha384-0vWV2WjBN2A0A2+Xtz2seIOM7GQrjMoc8OgD2lplo63bxGA1CcM9fsRriSwfVZd2 sha512-l35V5Ux87M+9+dxFbkZVT/Ix+tGZPOco+1XdYQitavHZGAc8WenDwUHcMc1eIEGWWMf9fK116Qpzv1YLOy4khw=="
   },
+  "images/mbta-logo-t-180.png": {
+    "src": "images/mbta-logo-t-180.png",
+    "integrity": "sha256-g9ccUOa3UYp8besPpA6Add8OqDQstM2pqWsWaUvBPJY= sha384-H6KW3DKEaK4Z98NcUE2RPQMI1cIIy50F5R59Po63mEDftjPnaiAobTL7T26BQ/Yf sha512-cAFcN3x5Tmm08hu4xYSPTJxctdTpSErCnEzD4blAefLBtDsQcECq41TqqBXlsNHS3jX1cYP06Qb/oXZgtd4erA=="
+  },
+  "images/mbta-logo-t-favicon.png": {
+    "src": "images/mbta-logo-t-favicon.png",
+    "integrity": "sha256-Q7tHIg85hVGBzzGIbJ1DjIBeeXaVDYEbh6m0evsNi18= sha384-eaZmusmFDNBeI9ADxpyv0WV5oLocnAC+M5CrZPK0/YHDNPGFQBxjHXoMTvAITSKG sha512-DIGTsmrgwYaFFf1bJzKx5Yg8tpU33sNC1mLcfNzpYe/Sf4bTuTvD1Ej87nnytiOgrsB3/QTZATBUBY8hdanAIw=="
+  },
   "images/mbta-logo.svg": {
     "src": "images/mbta-logo.svg",
     "integrity": "sha256-c8FEFPMOBhVwvI2qZN69oTNvfRKbkwr6SYrmRlNUANQ= sha384-a+HixHgtojLvEl5l2axuJcghyR1n9/1FIfATKUqf0epjuX8dkEm0QLGYvhSTKNI/ sha512-KBlAxx1FAKFauxRJvevW6eqhxHnfklnzh0H8Nhwem6JnAycSn3g9datF7wecm5GiUW7I+bZbrmP33eoFBoouoA=="
