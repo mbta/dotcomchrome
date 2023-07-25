@@ -7,5 +7,8 @@
     "url": "https://github.com/mbta/dotcomchrome.git"
   },
   "homepage": "https://github.com/mbta/dotcomchrome#readme",
-  "private": true
+  "private": true,
+  "dependencies": {
+    "@11ty/eleventy": "^2.0.1"
+  }
 }
