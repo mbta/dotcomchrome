@@ -4,7 +4,7 @@ The contents of this repository are generated manually by a  script, currently i
 
 ## Directory Structure
 
-**Files generated via `mix export.header_footer` task run in the Dotcom repository. Hash numbers in filenames subject to change.
+**Files generated via `mix export.header_footer` task run in the Dotcom repository. Hash numbers in filenames subject to change.**
 
 ```
 fonts/
