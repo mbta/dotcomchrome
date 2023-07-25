@@ -8,6 +8,10 @@
   },
   "homepage": "https://github.com/mbta/dotcomchrome#readme",
   "private": true,
+  "scripts": {
+    "copy-files": "./preview/copy-files.sh",
+    "preview": "cd preview && npx @11ty/eleventy --serve"
+  },
   "dependencies": {
     "@11ty/eleventy": "^2.0.1"
   }
