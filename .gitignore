@@ -2,3 +2,4 @@ preview/*
 !preview/Makefile
 !preview/index.njk
 !preview/.eleventy.js
+node_modules
