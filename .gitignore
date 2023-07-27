@@ -2,3 +2,5 @@ preview/*
 !preview/Makefile
 !preview/index.njk
 !preview/.eleventy.js
+!preview/copy-assets.sh
+node_modules
