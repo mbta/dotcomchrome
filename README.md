@@ -37,7 +37,7 @@ styles.1d0bb3f99e53cb784f6b.min.css.map**
 
 ```
 npm install
-npm run copy-files
+npm run copy-assets
 npm run preview
 ```
 
